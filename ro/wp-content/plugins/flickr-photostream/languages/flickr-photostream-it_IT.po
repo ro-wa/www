@@ -1,0 +1,903 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Flickr Photostream\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-12 09:43+0100\n"
+"PO-Revision-Date: 2014-07-12 09:44+0100\n"
+"Last-Translator: Miro Mannino <miro.mannino@gmail.com>\n"
+"Language-Team: Miro Mannino <miro.mannino@gmail.com>\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: esc_attr__;_e;__;_n;esc_attr_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../flickr-photostream-setting.php:118
+msgid "API Key is not valid"
+msgstr "API Key non valida"
+
+#: ../flickr-photostream-setting.php:125
+msgid "Invalid UserID"
+msgstr "ID Utente non valido"
+
+#: ../flickr-photostream-setting.php:132
+msgid "The 'Images Height' field must have a value greater than or equal to 30"
+msgstr ""
+"Il campo 'Altezza Immagini' deve essere un valore maggiore o uguale a 30"
+
+#: ../flickr-photostream-setting.php:137
+msgid "The 'Photos per page' field must have a value greater than 0"
+msgstr "Il campo 'Foto per pagina' deve avere un valore maggiore di 0"
+
+#: ../flickr-photostream-setting.php:150
+msgid ""
+"The 'Margins' field must have a value greater than 0, and not greater than 30"
+msgstr ""
+"Il campo 'Margini tra le immagini' deve avere un valore maggiore di 0, e non "
+"più grande di 30"
+
+#: ../flickr-photostream-setting.php:169
+msgid "Settings updated."
+msgstr "Opzioni salvate"
+
+#: ../flickr-photostream-setting.php:175
+msgid "Invalid values, the settings have not been updated"
+msgstr "Valori non validi, le opzioni non sono state salvate"
+
+#: ../flickr-photostream-setting.php:195
+msgid "Help"
+msgstr "Aiuto"
+
+#: ../flickr-photostream-setting.php:198
+msgid ""
+"To display the default user's Photostream, create a page and simply write "
+"the following shortcode where you want to display the gallery."
+msgstr ""
+"Per mostrare il Photostream dell'utente di default, create una pagina e "
+"inserite semplicemente il seguente shortcode dove volete mostrare la "
+"galleria."
+
+#: ../flickr-photostream-setting.php:204
+msgid ""
+"However, you can also use the attributes to have settings that are different "
+"than the defaults. For example:"
+msgstr ""
+"Tuttavia, puoi utilizzare gli attributi per avere impostazioni che sono "
+"diverse rispetto a quelle di default. Per esempio:"
+
+#: ../flickr-photostream-setting.php:207
+msgid ""
+"displays the latest 50 photos of the default user Photostream, without any "
+"page navigation. (the other settings are the defaults)"
+msgstr ""
+"mostra le ultime 50 foto del Photostream dell'utente di default, senza "
+"nessuna navigazione tra pagine. (le altre impostazioni sono quelle di "
+"default)"
+
+#: ../flickr-photostream-setting.php:211
+msgid "You can also configure it to show other Photostreams. For example:"
+msgstr "Puoi anche configurarlo per mostrare altri Photostream. Per esempio:"
+
+#: ../flickr-photostream-setting.php:214
+msgid ""
+"displays the Photostream of the specified user, no matter what is the "
+"default user ID in the settings. Remember that you can use <a href=\"http://"
+"idgettr.com/\" target=\"_blank\">idgettr</a> to retrieve the <code>user_id</"
+"code>."
+msgstr ""
+"mostra il Photostream dell'utente specificato, indipendentemente dall'ID "
+"dell'utente che è stato specificato nelle impostazioni. Ricorda che puoi "
+"utilizzare <a href=\"http://idgettr.com/\" target=\"_blank\">idgettr</a> per "
+"sapere l'<code>user_id</code>."
+
+#: ../flickr-photostream-setting.php:219
+msgid "Sets"
+msgstr "Sets"
+
+#: ../flickr-photostream-setting.php:221
+msgid ""
+"To show the photos of a particular photo set, you need to know its "
+"<code>photoset_id</code>."
+msgstr ""
+"Per mostrare un particolare photoset bisogna conoscere il suo "
+"<code>photoset_id</code>."
+
+#: ../flickr-photostream-setting.php:222
+msgid ""
+"For example, the <code>photoset_id</code> of the photo set located in the "
+"URL:"
+msgstr ""
+"Per esempio, il <code>photoset_id</code> del photoset accessibile dall'URL:"
+
+#: ../flickr-photostream-setting.php:224 ../flickr-photostream-setting.php:240
+msgid "is: "
+msgstr "è:"
+
+#: ../flickr-photostream-setting.php:226
+msgid "You can see that it is always the number after the word '/sets/'."
+msgstr "Nota che è sempre il numero che viene dopo la parola '/sets/'."
+
+#: ../flickr-photostream-setting.php:228
+msgid ""
+"To show a particular photoset, you need to use the <code>flickr_set</code> "
+"shortcode, and specify the <code>photoset_id</code> with the attribute "
+"<code>id</code>. For example:"
+msgstr ""
+"Per mostrare un particolare photoset devi utilizzare lo shortcode "
+"<code>flickr_set</code>, e specificare il <code>photoset_id</code> "
+"utilizzando l'attributo <code>id</code>. Per esempio:"
+
+#: ../flickr-photostream-setting.php:235
+msgid "Galleries"
+msgstr "Gallerie"
+
+#: ../flickr-photostream-setting.php:237
+msgid ""
+"To show the photos of a particular gallery, you need to know the "
+"<code>user_id</code> of the user that owns it, and its <code>gallery_id</"
+"code>."
+msgstr ""
+"Per mostrare una particolare galleria bisogna conoscere l'<code>user_id</"
+"code> dell'utente che la possiede, ed anche la sua <code>gallery_id</code>."
+
+#: ../flickr-photostream-setting.php:238
+msgid ""
+"For example, the <code>gallery_id</code> of the gallery located in the URL:"
+msgstr ""
+"Per esempio, il <code>gallery_id</code> della galleria accessibile con la "
+"URL:"
+
+#: ../flickr-photostream-setting.php:242
+msgid "You can see that it is always the number after the word '/galleries/'."
+msgstr "Nota che è sempre il numero che viene dopo la parola '/galleries/'."
+
+#: ../flickr-photostream-setting.php:244
+msgid ""
+"To show a particular gallery, you need to use the <code>flickr_gallery</"
+"code> shortcode, and specify the <code>user_id</code> with the attribute "
+"<code>user_id</code>, and the <code>gallery_id</code> with the attribute "
+"<code>id</code>. For example:"
+msgstr ""
+"Per mostrare una particolare galleria devi utilizzare lo shortcode "
+"<code>flickr_gallery</code>, e specificare l'<code>user_id</code> "
+"utilizzando l'attributo <code>user_id</code>, e il <code>gallery_id</code> "
+"utilizzando l'attributo <code>id</code>. Per esempio:"
+
+#: ../flickr-photostream-setting.php:249
+msgid ""
+"Remember that, if the gallery is owned by the default user (specified in the "
+"settings), you don't need the <code>user_id</code> attribute in the "
+"shortcode."
+msgstr ""
+"Ricorda che, se la galleria è posseduta dall'utente di default (specificato "
+"nelle impostazioni), puoi anche non utilizzare l'attributo <code>user_id</"
+"code> nello shortcode."
+
+#: ../flickr-photostream-setting.php:252
+msgid "Group pools"
+msgstr "Group Pool"
+
+#: ../flickr-photostream-setting.php:254
+msgid ""
+"To show the photos of a particular group pool, you need to know the "
+"<code>group_id</code>, that you can retrieve using <a href=\"http://idgettr."
+"com/\" target=\"_blank\">idgettr</a>."
+msgstr ""
+"Per mostrare le foto di un particolare group pool bisogna conoscere il "
+"<code>group_id</code>, puoi recuperarlo utilizzando <a href=\"http://idgettr."
+"com/\" target=\"_blank\">idgettr</a>."
+
+#: ../flickr-photostream-setting.php:256
+msgid ""
+"To show a particular group pool, you need to use the <code>flickr_group</"
+"code> shortcode, and specify the <code>group_id</code> with the attribute "
+"<code>id</code>. For example:"
+msgstr ""
+"Per mostrare un particolare group pool devi utilizzare lo shortcode "
+"<code>flickr_group</code>, e specificare il <code>group_id</code> "
+"utilizzando l'attributo <code>id</code>. Per esempio:"
+
+#: ../flickr-photostream-setting.php:263
+msgid "Tags"
+msgstr "Tags"
+
+#: ../flickr-photostream-setting.php:265
+msgid ""
+"To show the photos that have some particular tags, you need to use the "
+"<code>flickr_tags</code> shortcode, and specify the <code>user_id</code> and "
+"the tags with the attribute <code>tags</code>, as a comma-delimited list of "
+"words. For example:"
+msgstr ""
+"Per mostrare le foto che hanno un tag particolari, bisogna utilizzare lo "
+"shortcode <code>flickr_tags</code>, e specificare l'<code>user_id</code> e i "
+"tag con l'attributo <code>tags</code>, come una lista di parole separata da "
+"virgole. Per esempio:"
+
+#: ../flickr-photostream-setting.php:268
+msgid ""
+"Displays photos with one or more of the tags listed (the list is viewed as "
+"an OR combination, that is the default behavior)."
+msgstr ""
+"Mostra le foto che hanno uno o più tag tra quelli listati (la lista è vista "
+"come una combinazione in OR, che è il comportamento predefinito)."
+
+#: ../flickr-photostream-setting.php:271
+msgid ""
+"You can also exclude results that match a term by prepending it with a "
+"<code>-</code> character."
+msgstr ""
+"Puoi anche escludere i risultati che corrispondono ad un termine aggiungendo "
+"all'inizio del termine il carattere <code>-</code>."
+
+#: ../flickr-photostream-setting.php:272
+msgid ""
+"Then, you can choose to use the list as a OR combination of tags (to return "
+"photos that have <b>any</b> tag), or an AND combination (to return photos "
+"that have <b>all</b> the tags)."
+msgstr ""
+"Poi puoi scegliere di utilizzare la lista come una combinazione di tag in OR "
+"(specificando \"any\"), oppure una combinazione in AND (specificando \"all"
+"\")."
+
+#: ../flickr-photostream-setting.php:273
+msgid ""
+"To do this, you need to use the <code>tags_mode</code>, specifying \"any\" "
+"or \"all\". For example:"
+msgstr ""
+"Per fare ciò, devi utilizzare <code>tags_mode</code>, specificando \"any\" "
+"oppure \"all\". Per esempio:"
+
+#: ../flickr-photostream-setting.php:276
+msgid ""
+"Displays photos with all the tags listed (the list is viewed as an AND "
+"combination)."
+msgstr ""
+"Mostra le foto che hanno tutti i tag listati (la lista è vista come una "
+"combinazione in AND)."
+
+#: ../flickr-photostream-setting.php:279
+msgid ""
+"Remember that, if the photo that you want to display is owned by the default "
+"user (specified in the settings), you don't need the <code>user_id</code> "
+"attribute in the shortcode."
+msgstr ""
+"Ricorda che, se le foto che vuoi mostrare sono possedute dall'utente di "
+"default (specificato nelle impostazioni), puoi anche non utilizzare "
+"l'attributo <code>user_id</code> nello shortcode."
+
+#: ../flickr-photostream-setting.php:287
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: ../flickr-photostream-setting.php:291
+msgid "Global Settings"
+msgstr "Impostazioni Globali"
+
+#: ../flickr-photostream-setting.php:296
+msgid "Flickr API Key"
+msgstr "Chiave Flickr API"
+
+#: ../flickr-photostream-setting.php:304
+msgid "Get your Flickr API Key from "
+msgstr "Ottieni la tua Flickr API Key da "
+
+#: ../flickr-photostream-setting.php:305
+msgid "You can't use an attribute to change this setting"
+msgstr "Non puoi utilizzare un attributo per modificare questa impostazione"
+
+#: ../flickr-photostream-setting.php:311
+msgid "Default Settings"
+msgstr "Impostazioni di Default"
+
+#: ../flickr-photostream-setting.php:315
+msgid "User ID"
+msgstr "ID Utente"
+
+#: ../flickr-photostream-setting.php:322
+msgid "Get the User ID from "
+msgstr "Ottieni l'ID Utente da "
+
+#: ../flickr-photostream-setting.php:323 ../flickr-photostream-setting.php:334
+#: ../flickr-photostream-setting.php:345 ../flickr-photostream-setting.php:358
+#: ../flickr-photostream-setting.php:372 ../flickr-photostream-setting.php:386
+#: ../flickr-photostream-setting.php:403 ../flickr-photostream-setting.php:417
+#: ../flickr-photostream-setting.php:431 ../flickr-photostream-setting.php:443
+#: ../flickr-photostream-setting.php:457 ../flickr-photostream-setting.php:471
+msgid "You can use the <code>"
+msgstr "Puoi utilizzare l'attributo <code>"
+
+#: ../flickr-photostream-setting.php:323 ../flickr-photostream-setting.php:334
+#: ../flickr-photostream-setting.php:345 ../flickr-photostream-setting.php:443
+msgid "</code> attribute to change this default value"
+msgstr "</code> per cambiare il valore di default"
+
+#: ../flickr-photostream-setting.php:328
+msgid "Images Height (in px)"
+msgstr "Altezza Immagini (in px)"
+
+#: ../flickr-photostream-setting.php:339
+msgid "Maximum number of photos per page"
+msgstr "Massimo numero di foto per pagina"
+
+#: ../flickr-photostream-setting.php:350
+msgid "Last Row"
+msgstr "Ultima riga"
+
+#: ../flickr-photostream-setting.php:354
+msgid "Justify"
+msgstr "Giustifica"
+
+#: ../flickr-photostream-setting.php:355
+msgid "No justify"
+msgstr "Non giustificare"
+
+#: ../flickr-photostream-setting.php:356
+msgid "Hide if it cannot be justified"
+msgstr "Nascondi se non può essere giustificata"
+
+#: ../flickr-photostream-setting.php:358
+msgid ""
+"</code> attribute to change this default value (with the value "
+"<code>justify</code>, <code>nojustify</code> or <code>hide</code>)"
+msgstr ""
+"</code> per cambiare il valore di default (con i valori <code>justify</"
+"code>, <code>nojustify</code> o <code>hide</code>)."
+
+#: ../flickr-photostream-setting.php:363
+msgid "Fixed Height"
+msgstr "Altezza fissata"
+
+#: ../flickr-photostream-setting.php:371
+msgid ""
+"If enabled, each row has the same height, but the images will be cut more."
+msgstr ""
+"Se abilitato, ogni riga avrà la stessa altezza, quindi le immagini potranno "
+"essere maggiormente tagliate."
+
+#: ../flickr-photostream-setting.php:372 ../flickr-photostream-setting.php:417
+#: ../flickr-photostream-setting.php:431 ../flickr-photostream-setting.php:457
+#: ../flickr-photostream-setting.php:471
+msgid ""
+"</code> attribute to change this default value (with the value <code>true</"
+"code> or <code>false</code>)"
+msgstr ""
+"</code> per cambiare il valore di default (con i valori <code>true</code> o "
+"<code>false</code>)."
+
+#: ../flickr-photostream-setting.php:377
+msgid "Pagination"
+msgstr "Paginazione"
+
+#: ../flickr-photostream-setting.php:381 ../flickr-photostream-setting.php:395
+msgid "None"
+msgstr "Nessuna"
+
+#: ../flickr-photostream-setting.php:382
+msgid "Previous and Next"
+msgstr "Precedente e successiva"
+
+#: ../flickr-photostream-setting.php:383
+msgid "Page Numbers"
+msgstr "Numero pagine"
+
+#: ../flickr-photostream-setting.php:385
+msgid ""
+"If enabled, navigation buttons will be shown, and you can see the older "
+"photos.<br/><i>Use only one instance per page with this settings enabled!</i>"
+msgstr ""
+"Se abilitato,  verranno mostrati dei pulsanti di navigazione e si potranno "
+"visualizzare le pagine delle foto meno recenti.<br/><i>Per ogni pagina, "
+"utilizza solo un istanza con questa opzione abilitata!</i>"
+
+#: ../flickr-photostream-setting.php:386
+msgid ""
+"</code> attribute to change this default value (with the value <code>none</"
+"code>, <code>prevnext</code> or <code>numbers</code>)"
+msgstr ""
+"</code> per cambiare il valore di default (con i valori <code>none</code>, "
+"<code>prevnext</code> o <code>numbers</code>)."
+
+#: ../flickr-photostream-setting.php:391
+msgid "Lightbox"
+msgstr "Lightbox"
+
+#: ../flickr-photostream-setting.php:400
+msgid ""
+"With Colorbox, make sure that you have installed it with a plugin (i.e. "
+msgstr "Con Colorbox, assicurati di averlo installato con un plugin (i.e. "
+
+#: ../flickr-photostream-setting.php:401
+msgid ""
+"On the contrary, Swipebox comes with this plugin and you don't have to "
+"provide it with another plugin."
+msgstr ""
+"Al contrario, Swipebox viene fornito insieme al plugin e non devi "
+"necessariamente fornirlo installando un altro plugin."
+
+#: ../flickr-photostream-setting.php:403
+msgid ""
+"</code> attribute to change this default value (with the value <code>none</"
+"code>, <code>colorbox</code> or <code>swipebox</code>)."
+msgstr ""
+"</code> per cambiare il valore di default (con i valori <code>none</code>, "
+"<code>colorbox</code> or <code>swipebox</code>)."
+
+#: ../flickr-photostream-setting.php:408
+msgid "Captions"
+msgstr "Etichette"
+
+#: ../flickr-photostream-setting.php:416
+msgid ""
+"If enabled, the title of the photo will be shown over the image when the "
+"mouse is over. Note: <i>captions, with small images, become aesthetically "
+"unpleasing</i>."
+msgstr ""
+"Se abilitata, il titolo della foto verrà mostrato sopra l'immagine quando il "
+"mouse sarà sopra di essa. Nota: <i>quando l'altezza delle immagini è troppo "
+"piccola, le etichette diventano esteticamente sgradevoli</i>."
+
+#: ../flickr-photostream-setting.php:422
+msgid "Randomize order"
+msgstr "Ordine casuale"
+
+#: ../flickr-photostream-setting.php:430
+msgid "If enabled, the photos of the same page are randomized."
+msgstr ""
+"Se abilitato, le foto della stessa pagina saranno disposte casualmente."
+
+#: ../flickr-photostream-setting.php:436
+msgid "Margin between the images"
+msgstr "Margine tra le immagini"
+
+#: ../flickr-photostream-setting.php:448
+msgid "Open original images"
+msgstr "Apri immagini originali"
+
+#: ../flickr-photostream-setting.php:456
+msgid ""
+"If enabled, the lightbox will show the original images if they are "
+"available. Consider to leave this option off if your original images are "
+"very large."
+msgstr ""
+"Se abilitato, il lightbox mostrerà le foto originali se sono disponibili. "
+"Considera di togliere questa opzione se le tue immagini originali sono molto "
+"grandi."
+
+#: ../flickr-photostream-setting.php:462
+msgid "Block right click"
+msgstr "Blocca tasto destro"
+
+#: ../flickr-photostream-setting.php:470
+msgid ""
+"If enabled, the context menu will be blocked, so for the user is more "
+"difficult to save the images"
+msgstr ""
+"Se abilitato, il menu contestuale verrà bloccato, in modo che per gli utenti "
+"venga più difficile salvare le immagini"
+
+#: ../flickr-photostream-setting.php:478
+msgid "Save Changes"
+msgstr "Salva le modifiche"
+
+#: ../flickr-photostream-setting.php:485
+msgid "Help the project"
+msgstr "Aiuta il progetto"
+
+#: ../flickr-photostream-setting.php:488
+msgid ""
+"Help the project to grow. Donate something, or simply <a href=\"http://"
+"wordpress.org/plugins/flickr-photostream\" target=\"_blank\">rate the plugin "
+"on Wordpress</a>."
+msgstr ""
+"Aiuta il progetto a crescere. Dona qualcosa, o semplicemente <a href="
+"\"http://wordpress.org/plugins/flickr-photostream\" target=\"_blank"
+"\">recensisci il plugin su Wordpress</a>."
+
+#: ../flickr-photostream.php:56
+msgid "Flickr Photostream can't be activated: the cache Folder is not writable"
+msgstr ""
+"Flickr Photostream non può essere attivato: la cartella chache non è "
+"scrivibile"
+
+#: ../flickr-photostream.php:89
+msgid "FlickrPhotostream error"
+msgstr "Errore FlickrPhotostream"
+
+#: ../flickr-photostream.php:95
+msgid "Flickr API error"
+msgstr "Errore Flickr API"
+
+#: ../flickr-photostream.php:176
+msgid ""
+"You must specify the user_id for this action, using the \"user_id\" attribute"
+msgstr ""
+"Bisogna specificare l'user_id per quest'azione, utilizzando l'attributo "
+"\"user_id\""
+
+#: ../flickr-photostream.php:181
+msgid "You must specify the id of the gallery, using the \"id\" attribute"
+msgstr ""
+"Bisogna specificare l'id della galleria, utilizzando l'attributo \"id\""
+
+#: ../flickr-photostream.php:186
+msgid "You must specify the id of the set, using the \"id\" attribute"
+msgstr "Devi specificare l'id del set, utilizzando l'attributo \"id\"."
+
+#: ../flickr-photostream.php:191
+msgid "You must specify the tags using the \"tags\" attribute"
+msgstr "Bisogna specificare i tag utilizzando l'attributo \"tags\""
+
+#: ../flickr-photostream.php:193
+msgid "You must specify a valid tags_mode: \"any\" or \"all\""
+msgstr "Bisogna specificare un tags_mode valito: \"any\" oppure \"all\""
+
+#: ../flickr-photostream.php:198
+msgid "You must specify the id of the group, using the \"id\" attribute"
+msgstr "Bisogna specificare l'id del gruppo, utilizzando l'attributo \"id\""
+
+#: ../flickr-photostream.php:202
+msgid ""
+"The pagination attribute can be only \"none\", \"prevnext\" or \"numbers\"."
+msgstr ""
+"L'attributo per la paginazione può essere solamente \"none\", \"prevnext\" "
+"or \"numbers\"."
+
+#: ../flickr-photostream.php:206
+msgid ""
+"The last_row attribute can be only \"hide\", \"justify\" or \"nojustify\"."
+msgstr ""
+"L'attributo last_row può essere solamente \"hide\", \"justify\" o \"nojustify"
+"\"."
+
+#: ../flickr-photostream.php:210
+msgid ""
+"The lightbox attribute can be only \"none\", \"colorbox\" or \"swipebox\"."
+msgstr ""
+"L'attributo per il lightbox può essere solamente \"none\", \"colorbox\" "
+"oppure \"swipebox\"."
+
+#: ../flickr-photostream.php:258
+msgid "No photos"
+msgstr "Nessuna foto"
+
+#: ../flickr-photostream.php:425
+msgid "<span class=\"meta-nav\">&larr;</span> Older photos"
+msgstr "<span class=\"meta-nav\">&larr;</span> Foto meno recenti"
+
+#: ../flickr-photostream.php:431
+msgid "Newer photos <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Foto più recenti <span class=\"meta-nav\">&rarr;</span>"
+
+#~ msgid "Block context menu"
+#~ msgstr "Blocca menu contestuale"
+
+#~ msgid ""
+#~ "If enabled, the last row will be justified. In this case the last images "
+#~ "can be very bigger than the others."
+#~ msgstr ""
+#~ "Se abilitato, le immagini dell'ultima riga saranno giustificate. In "
+#~ "questo caso le ultime immagini potranno essere molto più grandi rispetto "
+#~ "alle altre."
+
+#~ msgid "Use large thumbnails"
+#~ msgstr "Utilizza miniature grandi"
+
+#~ msgid ""
+#~ "If you have uploaded small images in Flickr, it doesn't have large "
+#~ "thumbnails, and the gallery can't show these images. Disable this option "
+#~ "if you see that the large thumbnails don't appear."
+#~ msgstr ""
+#~ "Se hai uplodato immagini piccole su Flickr, allora non avrà calcolato "
+#~ "delle minature grandi, e la galleria potrebbe non riuscire a mostrare "
+#~ "alcune immagini. Disabilita quest'opzione se non vedi apparire alcune "
+#~ "immagini nella galleria."
+
+#~ msgid ""
+#~ "You can also show a particular photo set. You only need to specify its "
+#~ "<code>photoset_id</code>, located in the URL."
+#~ msgstr ""
+#~ "Pui anche mostrare un particolare photoset. Bisogna solamente specificare "
+#~ "il suo <code>photoset_id</code>, localizzato nella URL."
+
+#~ msgid ""
+#~ "You can also show a particular gallery. You only need to specify its "
+#~ "<code>gallery_id</code>, located in the URL."
+#~ msgstr ""
+#~ "Puoi anche mostrare una particolare galleria. Bisogna solamente "
+#~ "specificare la sua <code>gallery_id</code>, localizzata nella sua URL."
+
+#~ msgid ""
+#~ "Remember that the gallery owner is always the specified user. If you "
+#~ "specify an user that doesn't own the specified gallery, the gallery will "
+#~ "not be found."
+#~ msgstr ""
+#~ "Ricorda che il detentore della galleria è sempre l'utente che è stato "
+#~ "specificato. Se specifichi un utente che non possiede la galleria, questa "
+#~ "non verrà trovata."
+
+#~ msgid "For example:"
+#~ msgstr "Per esempio:"
+
+#~ msgid "No pages"
+#~ msgstr "No pagine"
+
+#~ msgid "The user not exists"
+#~ msgstr "L'utente non esiste"
+
+#~ msgid "Photos per page"
+#~ msgstr "Foto per pagina"
+
+#~ msgid ""
+#~ "If enabled, the photostream doesn't have a way to show the old images, "
+#~ "but only the newer."
+#~ msgstr ""
+#~ "Se abilitato, il photostream non avrà modo di mostrare le immagini più "
+#~ "vecchie."
+
+#~ msgid "Default values"
+#~ msgstr "Valori di default"
+
+#~ msgid ""
+#~ "<code>user_id</code>: the user ID (i.e. <code>51035555243@N01</code>)"
+#~ msgstr "<code>user_id</code>: l'user ID (i.e. <code>51035555243@N01</code>)"
+
+#~ msgid "<code>images_height</code>: height of the images (in px)"
+#~ msgstr "<code>images_height</code>: altezza delle immagini (in px)"
+
+#~ msgid ""
+#~ "<code>justify_last_row</code>: justify the last row (<code>true</code> or "
+#~ "<code>false</code>). If <code>true</code> the last images can be very "
+#~ "bigger than the others."
+#~ msgstr ""
+#~ "<code>justify_last_row</code>: giustifica l'ultima riga (<code>true</"
+#~ "code> o <code>false</code>). Se <code>true</code> le ultime immagini "
+#~ "potranno essere molto più grandi delle altre."
+
+#~ msgid ""
+#~ "<code>fixed_height</code>: fix the height of the row (<code>true</code> "
+#~ "or <code>false</code>)"
+#~ msgstr ""
+#~ "<code>fixed_height</code>: fissa l'altezza delle righe (<code>true</code> "
+#~ "o <code>false</code>)"
+
+#~ msgid ""
+#~ "<code>no_pages</code>: use or not the pages (<code>true</code> or "
+#~ "<code>false</code>). In this way, you can show only the first page with "
+#~ "the later photos."
+#~ msgstr ""
+#~ "<code>no_pages</code>: abilita o disabilita l'uso delle pagine "
+#~ "(<code>true</code> o <code>false</code>). In questo modo, può essere "
+#~ "mostrata solamente la prima pagina con le ultime foto."
+
+#~ msgid "Options saved."
+#~ msgstr "Opzioni salvate"
+
+#~ msgid "Page not found"
+#~ msgstr "Pagina non trovata"
+
+#~ msgid ""
+#~ "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+#~ "searching, or one of the links below, can help."
+#~ msgstr ""
+#~ "Sembra che non ci sia nulla di quello che stai cercando. I link seguenti "
+#~ "potrebbero interessarti."
+
+#~ msgid "Most Used Categories"
+#~ msgstr "Categorie maggiormente utilizzate"
+
+#~ msgid "Try looking in the monthly archives. %1$s"
+#~ msgstr "Sto provando a guardare negli archivi mensili. %1$s"
+
+#~ msgid "Daily Archives: %s"
+#~ msgstr "Archivi giornalieri: %s"
+
+#~ msgid "Monthly Archives: %s"
+#~ msgstr "Archivi mensili: %s"
+
+#~ msgid "Yearly Archives: %s"
+#~ msgstr "Archivi annuali: %s"
+
+#~ msgid "Blog Archives"
+#~ msgstr "Archivio del Blog"
+
+#~ msgid "Author Archives: %s"
+#~ msgstr "Archivi dell'autore: %s"
+
+#~ msgid "About %s"
+#~ msgstr "Informazioni sull'autore: %s"
+
+#~ msgid "Category: %s"
+#~ msgstr "Categoria: %s"
+
+#~ msgid ""
+#~ "This post is password protected. Enter the password to view any comments."
+#~ msgstr ""
+#~ "Questo post è protetto da password. Inserisci la password per vedere i "
+#~ "commenti."
+
+#~ msgid "One comment on &ldquo;%2$s&rdquo;"
+#~ msgstr "Un commento su &ldquo;%2$s&rdquo;"
+
+#~ msgid "%1$s comments on &ldquo;%2$s&rdquo;"
+#~ msgstr "%1$s commenti su &ldquo;%2$s&rdquo;"
+
+#~ msgid "&larr; Older Comments"
+#~ msgstr "&larr; Commenti più vecchi"
+
+#~ msgid "Newer Comments &rarr;"
+#~ msgstr "Commenti più recenti &rarr;"
+
+#~ msgid "Permanent Link to"
+#~ msgstr "Permanent Link a"
+
+#, fuzzy
+#~ msgid "Permalink to %s"
+#~ msgstr "Permanent Link a"
+
+#~ msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+#~ msgstr "Continua a leggere <span class=\"meta-nav\">&rarr;</span>"
+
+#~ msgid "<span class=\"%1$s\">Posted in</span> %2$s"
+#~ msgstr "<span class=\"%1$s\">Pubblicato in</span> %2$s"
+
+#~ msgid "<span class=\"reply\">Reply</span>"
+#~ msgstr "<span class=\"reply\">Rispondi</span>"
+
+#~ msgid "<span class=\"reply\">Replies:</span> 1"
+#~ msgstr "<span class=\"reply\">Risposte:</span> 1"
+
+#~ msgid "<span class=\"reply\">Replies:</span> %"
+#~ msgstr "<span class=\"reply\">Risposte:</span> %"
+
+#~ msgid "Edit"
+#~ msgstr "Modifica"
+
+#~ msgid "<span>Pages:</span>"
+#~ msgstr "<span>Pagine:</span>"
+
+#~ msgid "About "
+#~ msgstr "Informazioni su"
+
+#~ msgid "Download the Miro Theme"
+#~ msgstr "Download Miro Theme"
+
+#~ msgid "Primary Menu"
+#~ msgstr "Menu primario"
+
+#~ msgid "The right sidebar for posts and pages."
+#~ msgstr "La sidebar di destra per post e pagine"
+
+#~ msgid "(Edit)"
+#~ msgstr "(Modifica)"
+
+#~ msgid "%1$s on %2$s%3$s at %4$s%5$s <span class=\"says\">said:</span>"
+#~ msgstr "%1$s Il %2$s%3$s at %4$s%5$s <span class=\"says\">ha detto:</span>"
+
+#~ msgid "[Edit]"
+#~ msgstr "[Modifica]"
+
+#~ msgid "Your comment is awaiting moderation."
+#~ msgstr "Il tuo commento è in attesa di una moderazione."
+
+#~ msgid "Reply &darr;"
+#~ msgstr "Rispondi &darr;"
+
+#~ msgid "Main menu"
+#~ msgstr "Menu generale"
+
+#~ msgid "Skip to content"
+#~ msgstr "Vai al contenuto"
+
+#~ msgid "&larr; Previous"
+#~ msgstr "&larr; Precedenti"
+
+#~ msgid "Next &rarr;"
+#~ msgstr "Prossimi &rarr;"
+
+#~ msgid ""
+#~ "<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span "
+#~ "class=\"entry-date\"><abbr class=\"published\" title=\"%1$s\">%2$s</"
+#~ "abbr></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s "
+#~ "&times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel="
+#~ "\"gallery\">%7$s</a>"
+#~ msgstr ""
+#~ "<span class=\"meta-prep meta-prep-entry-date\">Pubblicato </span> <span "
+#~ "class=\"entry-date\"><abbr class=\"published\" title=\"%1$s\">%2$s</"
+#~ "abbr></span> il <a href=\"%3$s\" title=\"Link to full-size image\">%4$s "
+#~ "&times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel="
+#~ "\"gallery\">%7$s</a>"
+
+#~ msgid "Pages:"
+#~ msgstr "Pagine:"
+
+#~ msgid "Custom Logo"
+#~ msgstr "Logo Personalizzato"
+
+#~ msgid "Upload a logo for your site."
+#~ msgstr "Carica un logo per il tuo sito."
+
+#~ msgid "Display Site Tagline"
+#~ msgstr "Mostra Tagline del Sito"
+
+#~ msgid "Display the site tagline under the site title."
+#~ msgstr "Mostra il tagline del sito sotto il titolo del sito."
+
+#~ msgid "Select a site layout: sidebar right, sidebar left, or no sidebar."
+#~ msgstr ""
+#~ "Seleziona un layout del sito: sidebar a destra, sidebar a sinistra, o "
+#~ "nessuna sidebar."
+
+#~ msgid "Custom Footer Text"
+#~ msgstr "Testo Personalizzato del Footer"
+
+#~ msgid "Custom text for the footer of your theme."
+#~ msgstr "Testo personalizzato per il footer del tuo tema"
+
+#~ msgid "Search Results for: %s"
+#~ msgstr "Risultati della ricerca per: %s"
+
+#~ msgid "Nothing Found"
+#~ msgstr "Nessun risultato"
+
+#~ msgid "Search"
+#~ msgstr "Cerca"
+
+#~ msgid "Archives"
+#~ msgstr "Archivi"
+
+#~ msgid "Tag Archives: %s"
+#~ msgstr "Archivi Tag: %s"
+
+#~ msgid "Theme Options"
+#~ msgstr "Opzioni del tema"
+
+#, fuzzy
+#~ msgid "To enable miro theme options, please install and activate the"
+#~ msgstr "Per abilitare le opzioni del tema, istallare ed attivare il"
+
+#~ msgid "This theme has options for:"
+#~ msgstr "Questo tema ha delle opzioni per:"
+
+#~ msgid "Uploading a logo image"
+#~ msgstr "Sto aggiornando l'immagine del logo "
+
+#~ msgid "Displaying the site tagline"
+#~ msgstr "Sto mostrando  il tagline del sito"
+
+#~ msgid "Changing sidebar positions, or removing sidebars entirely"
+#~ msgstr "Sto cambiando la posizione della sidebar (o rimuovendo interamente)"
+
+#~ msgid "Updating the footer text"
+#~ msgstr "Sto aggiornando il footer text"
+
+#~ msgid ""
+#~ "If you don't need these options, the plugin is not required and default "
+#~ "settings will be used."
+#~ msgstr ""
+#~ "Se non hai bisogno di queste opzioni, non c'è bisogno del plugin e "
+#~ "saranno caricate le impostazioni di default."
+
+#~ msgid "Install Now"
+#~ msgstr "Installa Adesso"
+
+#~ msgid "Comments are closed."
+#~ msgstr "Commenti disabilitati."
+
+#~ msgid ""
+#~ "<span class=\"sep\">Posted </span><a href=\"%1$s\" title=\"%2$s\" rel="
+#~ "\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</"
+#~ "time></a>"
+#~ msgstr ""
+#~ "<span class=\"sep\">Pubblicato </span><a href=\"%1$s\" title=\"%2$s\" rel="
+#~ "\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</"
+#~ "time></a>"
+
+#~ msgid ""
+#~ "Sorry, but nothing matched your search criteria. Please try again with "
+#~ "some different keywords."
+#~ msgstr ""
+#~ "Spiacenti, ma niente corrisponde ai criteri ricercati. Per favore  "
+#~ "provare nuovamente con un altra parola."

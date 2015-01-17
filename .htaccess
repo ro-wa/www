@@ -1,0 +1,35 @@
+
+# -FrontPage-
+
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+# DirectoryIndex index.html index.php index.cgi 
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthName ro-wa.org
+AuthUserFile /home/rowaorg/public_html/_vti_pvt/service.pwd
+AuthGroupFile /home/rowaorg/public_html/_vti_pvt/service.grp
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+RewriteCond %{HTTP_HOST} ^ro\-wa\.org$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.ro\-wa\.org$
+RewriteRule ^photo\/1Decembrie2014$ "http\:\/\/facebook\.com\/rowaorg" [R=301,L]
+

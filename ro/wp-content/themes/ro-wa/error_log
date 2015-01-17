@@ -1,0 +1,1 @@
+[22-Jan-2014 14:45:57 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/rowaorg/public_html/ro/wp-content/themes/ro-wa/404.php on line 1

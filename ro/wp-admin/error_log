@@ -1,0 +1,1 @@
+[22-Nov-2014 02:04:40 UTC] WordPress database error Table 'rowaorg_wp.wp_mc4wp_log' doesn't exist for query ALTER TABLE wp_mc4wp_log CHANGE list_ID list_ids VARCHAR(100) made by require_once('wp-admin/admin.php'), do_action('admin_init'), call_user_func_array, MC4WP_Log->upgrade

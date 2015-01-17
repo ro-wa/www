@@ -1,0 +1,67 @@
+# WordPress <--> GitHub Sync
+
+*A WordPress plugin to sync content with a GitHub repository (or Jekyll site)*
+
+Ever wish you could collaboratively author content for your WordPress site (or expose change history publicly and accept pull requests from your readers)?
+
+Looking to tinker with Jekyll, but wish you could use WordPress's best-of-breed web editing interface instead of Atom? (gasp!)
+
+Well, now you can! Introducing [WordPress <--> GitHub Sync](https://github.com/benbalter/wordpress-github-sync)! :sparkles:
+
+## WordPress <--> GitHub Sync does three things:
+
+1. Allows content publishers to version their content in GitHub, exposing "who made what change when" to readers
+
+2. Allows readers to submit proposed improvements to WordPress-served content via GitHub's Pull Request model
+
+3. Allows non-technical writers to draft and edit a Jekyll site in WordPress's best-of-breed editing interface
+
+## WordPress <--> GitHub sync might be able to do some other cool things:
+
+* Allow teams to collaboratively write and edit posts using GitHub (e.g., pull requests, issues, comments)
+
+* Allow you to sync the content of two different WordPress installations via GitHub
+
+* Allow you to stage and preview content before "deploying" to your production server
+
+## How it works
+
+The sync action is based on two hooks:
+
+1. A per-post sync fired in response to WordPress's `save_post` hook which pushes content to GitHub
+
+2. A sync of all changed files trigged by GitHub's `push` webhook (outbound API call)
+
+## Setup
+
+**:warning: Still a work in progress, but [we'd love your help](CONTRIBUTING.md) making it better. :warning:**
+
+### Installing the WordPress plugin
+
+1. Install the plugin and activate it via WordPress's plugin settings page.
+  - Over SSH:
+    1. `cd wp-content/plugins`
+    2. `git clone https://github.com/benbalter/wordpress-github-sync.git`
+    3. Activate the plugin in Wordpress' Dashboard > Plugins > Installed Plugins
+  - Over FTP:
+    1. Download [the latest master ZIP](https://github.com/benbalter/wordpress-github-sync/archive/master.zip)
+    2. Unzip `master.zip` and upload it to `wp-content/plugins/wordpress-github-sync/`
+    3. Activate the plugin in Wordpress' Dashboard > Plugins > Installed Plugins
+
+### Configuring the plugin
+
+1. [Create a personal oauth token](https://github.com/settings/tokens/new) with the `public_repo` scope. If you'd prefer not to use your account, you can create another GitHub account for this. 
+2. Configure your GitHub host, repository, secret (defined in the next step),  and OAuth Token on the WordPress <--> GitHub sync settings page within WordPress's administrative interface
+3. Create a WebHook within your repository with the provided callback URL and callback secret, using `application/json` as the content type. To set up a webhook on GitHub, head over to the **Settings** page of your repository, and click on **Webhooks & services**. After that, click on **Add webhook**.
+
+## Contributing
+
+Found a bug? Want to take a stab at [one of the open issues](https://github.com/benbalter/wordpress-github-sync/issues)? We'd love your help!
+
+See [the contributing documentation](CONTRIBUTING.md) for details.
+
+## Prior Art
+
+* [WordPress Post Forking](https://github.com/post-forking/post-forking)
+* [WordPress to Jekyll exporter](https://github.com/benbalter/wordpress-to-jekyll-exporter)
+* [Writing in public, syncing with GitHub](https://konklone.com/post/writing-in-public-syncing-with-github)
